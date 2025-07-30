@@ -1,0 +1,26 @@
+.main-page {
+  @media (hover: hover) and (pointer: fine) {
+    padding: calc(125px + 110px) 182px 125px;
+  }
+  height: 89.5vh;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7vh;
+    width: 100%;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding-top: 25vh;
+    height: 86.5vh;
+  }
+}
+
+.main-page__hero-logo {
+}

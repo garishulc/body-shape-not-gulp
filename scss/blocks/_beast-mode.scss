@@ -1,0 +1,54 @@
+.beast-mode {
+  margin-top: 150px;
+  position: relative;
+}
+.beast-mode__background::before {
+  content: "";
+  background-image: url(../img/beast/beast-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../img/beast/beast-bg@2x.jpg);
+    background-repeat: no-repeat;
+  }
+  -webkit-clip-path: polygon(0% 9%, 100% 0%, 100% 91%, 0% 100%);
+  clip-path: polygon(0% 9%, 100% 0%, 100% 91%, 0% 100%);
+  overflow: hidden; /* Скрыть элементы за пределами области обрезки */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.beast-mode__content {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 30px;
+}
+.beast-mode__title {
+}
+.beast-mode__description {
+  line-height: 150%;
+  font-size: 22px;
+  font-weight: 300;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.beast-mode__button {
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 18px 47px;
+  background-color: #ffd479;
+}
+.beast-mode__button a {
+  color: #000;
+}

@@ -1,0 +1,27 @@
+/* Base */
+@use "./base/mixins";
+@use "./base/reset";
+@use "./base/vars";
+@use "./base/fonts";
+@use "./blocks/titles";
+@use "./base/base";
+@use "./base/utils"; // Тест на ошибку
+/*контейнеры*/
+@use "./base/containers";
+@use "./base/sticky-footer";
+
+/* Blocks */
+/*все остальные блоки в порядке их подключения*/
+@use "./blocks/header";
+@use "./blocks/main-page";
+@use "./blocks/bg-image";
+@use "./blocks/trainers";
+@use "./blocks/beast-mode";
+@use "./blocks/programms-and-sections";
+@use "./blocks/contacts";
+@use "./blocks/footer";
+/*
+@import "./blocks/*";
+*/
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */

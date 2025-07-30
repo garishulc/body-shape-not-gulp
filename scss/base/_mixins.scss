@@ -1,0 +1,22 @@
+/*объявление миксинов для адаптивной вёрстки*/
+
+/*не работают с использованием пламгина для sass, по карайней мере у меня*/
+/*
+@mixin mediaBg() {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 820px) {
+		@content;
+	}
+}
+*/

@@ -1,0 +1,25 @@
+:root {
+	/*переменные дляя контейнерв*/
+	--container-width-contacts: 585px;
+	--container-width: 1200px;
+	--container-padding: 15px;
+	/*переменные для шрифтов*/
+	--font-main: "Roboto";
+	--font-accent: "bebasneue";
+	--font-titles: var(--font-accent);
+	/*переменные для цвеетов*/
+	--page-bg: #1f2a32;
+	--text-color: #fafaf5;
+	--accent: #ffd479;
+	--link-color: #ffffff;
+	/*переменные для медиа запросов*/
+	--media-bg: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
+	--media-laptop-size: 1199px;
+	--media-tablet-size: 1024px;
+	--media-mobile-size: 768px;
+}
+/*варинт цветов для ттёмной темы*/
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

@@ -1,0 +1,81 @@
+.trainers {
+  @media (max-width: 1024px) {
+    margin-top: 150px;
+  }
+}
+.trainers__content {
+  margin-top: 150px;
+}
+.trainers__description {
+}
+.trainers__title {
+  text-align: center;
+}
+.trainers__text {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+.trainers__images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  row-gap: 35px;
+  column-gap: 30px;
+  justify-content: center;
+}
+.trainers__img {
+  border-radius: 20px;
+}
+.trainers__img-container {
+  max-width: 268px;
+  position: relative;
+}
+
+.trainers__img-gradient {
+  position: relative;
+  &::after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: 1;
+    opacity: 0;
+    content: ""; /*пустой контент*/
+    position: absolute; /*позионирование относительно старшего блока*/
+    top: 0; /*позиционирование абсолюное, относительно более главного блока*/
+    left: 0;
+    width: 100%; /*размер по ширине и высоте относительное старшего элемента*/
+    height: 100%;
+    border-radius: 20px; /*градиент*/
+    pointer-events: none; /* Чтобы клики проходили сквозь слой */
+    @media (hover: none) and (pointer: coarse) {
+      opacity: 1;
+    }
+  }
+  &:hover::after {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+}
+
+.trainers__img-container-text {
+  transition: opacity 0.5s ease;
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  top: 37%;
+  left: 0;
+  opacity: 0;
+  padding: 0px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  @media (hover: none) and (pointer: coarse) {
+    opacity: 1;
+  }
+}
+.trainers__img-gradient:hover .trainers__img-container-text {
+  opacity: 1;
+}
