@@ -42,7 +42,7 @@
   <main class="main-page">
     <section>
       <div class="container-half-right main-page-container">
-        <img class="main-page__hero-logo" src="./img/hero/hero-logo.png" alt="Alt">
+        <img class="main-page__hero-logo" src="./img/hero/hero-logo.png" alt="вариант для ретина экранов">
       </div>
       <div class="bg__image"></div>
     </section>
@@ -150,26 +150,26 @@
       <div class="contacts__content">
         <h3 class="contacts__title title-4">НАПИСАТЬ НАМ</h3>
         <div class="contacts__form">
-          <form id="contactForm" action="send-mail.php" method="post" class="conntacts__form-name">
-            <!--Your name-->
+          <form action="#" id="contactForm" class="conntacts__form-name" autocomplete="off">
+            <!--Ваше имя-->
             <div class="form__group form__group-name">
-              <label for="name" class="">Ваше имя</label>
-              <input placeholder="Юрий" type="text" id="name" name="name" class="" required>
+              <label for="name">Ваше имя</label>
+              <input placeholder="Введите ваше имя" type="text" id="name" name="name" autocomplete="off">
             </div>
             <!--Email-->
             <div class="form__group form__group-email">
-              <label for="email" class="">Email</label>
-              <input placeholder="info@mail.com" type="email" id="email" name="email" class="" required>
+              <label for="email">Email</label>
+              <input placeholder="info@mail.com" type="email" id="email" name="email">
             </div>
-            <!--Message-->
+            <!--Сообщение-->
             <div class="form__group form__group-message">
-              <label for="message" class="">Сообщение</label>
-              <textarea
-                placeholder="Меня зовут Юрий, и я заинтересован в ваших услугах. Хотелось бы узнать больше о программах тренировок и возможностях записи. Заранее спасибо за ответ!"
-                class="form__group-texarea" name="message" id="message" rows="5" required></textarea>
+              <label for="message" class="form__message">Сообщение</label>
+              <span class="just-validate-error-label"></span>
+              <textarea placeholder="Сообщение" class="form__group-texarea" name="message" id="message"
+                rows="5"></textarea>
             </div>
-            <!--button submit-->
-            <button type="submit" class="contacts__button">Отправить</button>
+            <!--Кнопка отправить-->
+            <button type="submit" class="contacts__button" id="contacts__btn">Отправить</button>
           </form>
         </div>
       </div>
@@ -204,7 +204,9 @@
       </div>
     </div>
   </footer>
-  <script src="./js/index.js"></script>
+  <!-- подключаем валидацию из пакета нпм  -->
+  <script src="./js/modules/just-validate.production.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

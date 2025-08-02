@@ -75,7 +75,6 @@
   line-height: 150%;
   width: 100%;
   border-bottom: solid 1px rgba(216, 216, 216, 0.3);
-  margin-bottom: 30px;
 }
 .form__group-texarea textarea {
   line-height: 150%;
@@ -84,6 +83,7 @@ textarea::-webkit-resizer {
   background: url("../../img/resize/resize.png") no-repeat;
 }
 .contacts__button {
+  margin-top: 30px;
   padding: 18px 53px;
   background-color: #ffd479;
   color: #000000;
